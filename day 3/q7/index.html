@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KreditBee Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons button {
+            padding: 8px 16px;
+            border-radius: 2px;
+            border-color: red;
+            background-color: #ffffff;
+            color: rgb(255, 0, 0);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #4ee237;
+        }
+
+        .kreditbee {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            
+        }
+
+        .kreditbee div {
+            width: 30%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 5%;
+        }
+
+
+        .blog {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .blog div {
+            width: 30%;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .blog img {
+            height: 100px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #685d5d;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .formdiv{
+            background-color: rgb(255, 166, 0);
+        }
+        .form {
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+         
+
+        .form h2 {
+            text-align: center;
+        }
+
+        .form h5 {
+            text-align: center;
+        }
+
+        .form h5 a {
+            color: #007BFF;
+        }
+
+        .form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form button {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="https://ik.imagekit.io/krazybee/kreditbee_in/logo_horizontal_BNqOuZWg_.svg" alt="KreditBee Logo">
+        </div>
+        <nav>
+          <ul>
+            <li>Loans</li>
+            <li>Calculators</li>
+            <li>Credit Report</li>
+            <li>Refer & Earn</li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
+    </header>
+
+    <div>
+        <h1>Why choose KreditBee?</h1>
+    </div>
+
+    <div class="kreditbee">
+        <div>
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg" alt="low interest">
+            <h3>Lower Interest Rates</h3>
+            <p>Get loans for multiple purposes at lower interest rates to suit your needs.</p>
+        </div>
+        <div>
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg" alt="fast">
+            <h3>Fast Processing and Disbursal</h3>
+            <p>Apply online, check your eligibility, and get money directly in your bank in 10 minutes.</p>
+        </div>
+        <div>
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg" alt="easy">
+            <h3>Easy Repayment Options</h3>
+            <p>Repay the loan amount in easy EMI with flexible tenure options.</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Fresh from the blog -></h2>
+    </div>
+
+    <div class="blog">
+        <div>
+            <img src="https://blog.kreditbee.in/blog/content/images/2024/08/Blog-Image_Aug_45_Makar-Sankranti-Festival-Celebrated-in-India.png" alt="">
+            <p>Shopping Guides</p>
+            <h3>9 Comfy Throws for Cosy Autumn Vibes</h3>
+            <p>Embrace the snuggling season with stylish throws that will warm your hearts.</p>
+        </div>
+        <div>
+            <img src="https://blog.kreditbee.in/blog/content/images/2024/08/Blog-Image_Aug_43_Good-Friday.png" alt="">
+            <p>Shopping Guides</p>
+            <h3>14 Beautiful Bags That Express Your Unique Style</h3>
+            <p>Amp up your fashion game with bags that perfectly match your aesthetic.</p>
+        </div>
+        <div>
+            <img src="https://ik.imagekit.io/krazybee/kreditbee_in/InnerPages/News/ArticleCover/PR-_Image_480X272_img_KBWeb_News_20240101-G.png" alt="">
+            <p>Gift Ideas</p>
+            <h3>The Best Gift Ideas for Kids of All Ages</h3>
+            <p>Shop the sweetest surprises for all little ones in your family - these gifts for kids will definitely earn you some brownie points.</p>
+        </div>
+    </div>
+    <div class="formdiv">
+        <div class="form">
+            <h2>Create Account</h2>
+            <h5>Already have an account? <a href="">Sign in</a></h5>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="loan-amount">Referral Code (Optional)</label>
+            <input type="number" id="loan-amount" name="loan-amount">
+            
+            <button type="submit">SUBMIT</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>COPYRIGHT &copy; ETSY PRIVATE LIMITED. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</body>
+</html>
