@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy portfolio</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: gray;
+        }
+        
+        .card-list {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 4%;
+        }
+
+        @media (min-width: 576px) {
+        .card {
+            flex-basis: 48%; 
+            align-items: center;
+            text-align: center;
+        }
+        }
+
+        @media (min-width: 768px) {
+        .card {
+            border-radius: 4%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            flex-basis: 100%;
+            
+        }
+        }
+        .card {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #e3dfdf;
+            font-size: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 4%;
+            margin-bottom: 15px;
+            align-items: center;
+            text-align: center;
+            border-radius: 4%;
+        }
+
+        .card__img {
+            border: 1px dashed;
+            margin-bottom: 8px;
+            height: 120px;
+        }
+
+        @media (min-width: 768px) {
+        .card {
+            flex-direction: row;
+            text-align: end;
+            align-items: end;
+        }
+        
+        .card__img {
+            flex-basis: 33%;
+            margin: 0;
+            height: auto;
+        }
+        }
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+        box-sizing: inherit;
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        .home{
+            color: rgb(0, 255, 21);
+        }
+        .education{
+            color: rgb(255, 36, 72);
+        }
+        .project{
+            color: rgb(255, 204, 0);
+        }
+        .skill{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>Home</h3>
+        <h3>Education</h3>
+        <h3>Projects</h3>
+        <h3>Skills</h3>
+        <h3>Contact Me</h3>
+    </nav>
+    <div class="card-list">
+        <div class="card"> 
+            <div class="card_img">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile pic">
+            </div>
+            <div class="card_body">
+                <h3 class="home">Home</h3>
+                <div class="discription">This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscig elit.</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxwuEP1dItZwtEtr--OBzW-Z7JRvf3jYmdg&s" alt="Education pic">
+            </div>
+            <div class="card_body">
+                <h3 class="education">Education</h3>
+                <div class="discription">This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscig elit.</div>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="card_img">
+                <img src="https://www.shutterstock.com/image-photo/project-report-text-written-on-260nw-527649196.jpg" alt="projects pic">
+            </div>
+            <div class="card_body">
+                <h3 class="project">Projects</h3>
+                <div class="discription">
+                    This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscig elit.
+                </div>
+            </div>
+            
+        </div>
+        <div  class="card">
+            <div class="card_img">
+                <img src="https://img.freepik.com/free-photo/top-view-skills-written-note-with-notepad-light-background-job-office-school-copybook-college-business-colors_179666-18276.jpg" alt="Skills pic">
+            </div>
+            <div class="card_body">
+                <h3 class="skill">Skills</h3>
+                <div class="discription"> 
+                    This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscig elit.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
