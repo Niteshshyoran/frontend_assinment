@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.timer-container{
+    text-align: center;
+    background: rgb(195, 177, 171);
+    border: 2px solid rgb(69, 253, 173);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.timer-displayed{
+    font-size: 40px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
