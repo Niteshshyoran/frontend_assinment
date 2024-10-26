@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Cards</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container styling */
+        #root {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 400px;
+        }
+
+        /* Greeting card styling */
+        .greeting-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Individual greeting message */
+        .greeting-message {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Individual name */
+        .name {
+            display: block;
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+<script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    const list = [
+        { greeting: "Hello", name: "Mohan" },
+        { greeting: "Namaste", name: "Rahul" }
+    ];
+
+    const GreetingCard = (props) => {
+        const { greeting, name } = props || {};
+        return (
+            <div className="greeting-card">
+                <span className="greeting-message">{greeting}</span>
+                <span className="name">- {name}</span>
+            </div>
+        );
+    };
+
+    const Component = () => {
+        return (
+            <div>
+                {list.map((item, index) => (
+                    <GreetingCard key={index} greeting={item.greeting} name={item.name} />
+                ))}
+            </div>
+        );
+    };
+
+    ReactDOM.render(<Component />, document.getElementById("root"));
+</script>
+
+</html>
